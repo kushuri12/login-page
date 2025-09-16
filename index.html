@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-500 to-blue-600 flex flex-col justify-center items-center h-screen"
+  >
+    <div
+      class="backdrop-blur-2xl p-5 text-center rounded-lg shadow-[black_0_0_10px] -transition duration-500 hover:scale-125"
+    >
+      <div class="text-white font-bold pb-[50px] text-4xl">Form Login</div>
+      <div>
+        <label
+          class="absolute text-white text-sm pointer-events-none"
+          for="username"
+          >Username</label
+        >
+        <input
+          class="w-full border-b-2 bg-transparent px-2 pb-1 text-white focus:outline-none -transition duration-500 [&:not(:placeholder-shown)]:pt-5 hover:pt-5"
+          type="text"
+          id="username"
+          placeholder=""
+        />
+      </div>
+      <br />
+      <div>
+        <label
+          class="absolute text-white text-sm pointer-events-none"
+          for="password"
+          >Password</label
+        >
+        <input
+          class="w-full border-b-2 bg-transparent px-2 pb-1 text-white focus:outline-none -transition duration-500 [&:not(:placeholder-shown)]:pt-5 hover:pt-5"
+          type="password"
+          id="Password"
+          placeholder=""
+        />
+      </div>
+      <br />
+      <div class="pt-5">
+        <button
+          class="text-white bg-blue-400 p-2 w-full rounded-lg hover:bg-white hover:text-black transition duration-500  focus:outline-none focus:ring-2 focus:ring-white"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
