@@ -4,50 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body
-    class="bg-gradient-to-r from-blue-500 to-blue-600 flex flex-col justify-center items-center h-screen"
-  >
-    <div
-      class="backdrop-blur-2xl p-5 text-center rounded-lg shadow-[black_0_0_10px] -transition duration-500 hover:scale-125"
+  <body>
+    <header
+      class="fixed w-full p-2 bg-blue-500 text-white font-bold flex items-center shadow-[0_0_50px_#3b82f6]"
     >
-      <div class="text-white font-bold pb-[50px] text-4xl">Form Login</div>
-      <div>
-        <label
-          class="absolute text-white text-sm pointer-events-none"
-          for="username"
-          >Username</label
+      <h1
+        class="transition duration-500 hover:drop-shadow-[0_0_10px_white] cursor-default"
+      >
+        Code Globaliti
+      </h1>
+
+      <nav
+        class="absolute h-5 w-52 bg-white left-57 -translate-x-1/2 flex gap-3 text-blue-500 pl-2 pr-2 rounded-lg text-xs sm:left-1/2 lg:left-1/2 md:text-sm md:w-auto lg:text-base lg:h-auto lg:w-auto"
+      >
+        <a
+          href="tentang"
+          class="transition duration-500 hover:rotate-[15deg] hover:text-white hover:bg-blue-500"
+          >Tentang Kami</a
         >
-        <input
-          class="w-full border-b-2 bg-transparent px-2 pb-1 text-white focus:outline-none -transition duration-500 [&:not(:placeholder-shown)]:pt-5 hover:pt-5"
-          type="text"
-          id="username"
-          placeholder=""
-        />
-      </div>
-      <br />
-      <div>
-        <label
-          class="absolute text-white text-sm pointer-events-none"
-          for="password"
-          >Password</label
+        <a
+          href="kegiatan"
+          class="transition duration-500 hover:rotate-[-15deg] hover:text-white hover:bg-blue-500"
+          >Kegiatan</a
         >
-        <input
-          class="w-full border-b-2 bg-transparent px-2 pb-1 text-white focus:outline-none -transition duration-500 [&:not(:placeholder-shown)]:pt-5 hover:pt-5"
-          type="password"
-          id="Password"
-          placeholder=""
-        />
-      </div>
-      <br />
-      <div class="pt-5">
-        <button
-          class="text-white bg-blue-400 p-2 w-full rounded-lg hover:bg-white hover:text-black transition duration-500  focus:outline-none focus:ring-2 focus:ring-white"
+        <a
+          href="kontak"
+          class="transition duration-500 hover:rotate-[15deg] hover:text-white hover:bg-blue-500"
+          >Kontak</a
         >
-          Login
-        </button>
-      </div>
+      </nav>
+    </header>
+
+    <div class="flex flex-col justify-center items-center h-[100vh] cursor-default">
+      <h1 class="font-bold text-blue-500 text-4xl w-[300px] text-center pb-4">
+        Code Globaliti Community
+      </h1>
+      <p class="text-blue-500">Tempatnya Parah Sepuh Berkumpul</p>
     </div>
   </body>
 </html>
